@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.auth/
+
+# playwright-bdd generated files
+.features-gen/
+
+# TypeScript
+dist/
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Storage state (zawiera sesję/ciasteczka)
+storageState.json
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store

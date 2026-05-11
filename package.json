@@ -1,0 +1,32 @@
+{
+  "name": "av-e2e-tests",
+  "version": "1.0.0",
+  "description": "QA Engineer- AVSystem- Rekrutacja",
+  "main": "index.js",
+  "engines": {
+    "node": "22.12.0",
+    "npm": "11.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8cmds/av-e2e-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/8cmds/av-e2e-tests/issues"
+  },
+  "homepage": "https://github.com/8cmds/av-e2e-tests#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.3",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.2",
+    "playwright-bdd": "^8.5.0",
+    "typescript": "^6.0.3"
+  }
+}
