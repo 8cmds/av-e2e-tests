@@ -8,7 +8,10 @@
     "npm": "11.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "bddgen && playwright test",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:ui": "bddgen && playwright test --ui",
+    "test:report": "playwright show-report"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/8cmds/av-e2e-tests/issues"
   },
@@ -26,7 +29,9 @@
     "@cucumber/cucumber": "^12.8.3",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.2",
+    "dotenv": "^17.4.2",
     "playwright-bdd": "^8.5.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "winston": "^3.19.0"
   }
 }

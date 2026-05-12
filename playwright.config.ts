@@ -1,5 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 import { defineBddConfig } from 'playwright-bdd';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const testDir = defineBddConfig({
     features: 'features/**/*.feature',
@@ -12,7 +15,7 @@ export default defineConfig({
     workers: 1,
     reporter: [['html', { open: 'never' }], ['list']],
     use: {
-        baseURL: 'https://av-qa-recruitment.netlify.app',
+        baseURL: process.env.BASE_URL || 'https://av-qa-recruitment.netlify.app',
         headless: false,
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',

@@ -9,7 +9,7 @@ playwright/.cache/
 .auth/
 
 # playwright-bdd generated files
-.features-gen/
+#.features-gen/
 
 # TypeScript
 dist/
@@ -18,7 +18,7 @@ dist/
 *.d.ts.map
 
 # Environment variables
-.env
+#.env
 .env.local
 .env.*.local
 
